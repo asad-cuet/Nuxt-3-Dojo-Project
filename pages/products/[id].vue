@@ -1,10 +1,7 @@
 // /products/:id route
 <template>
     <div>
-        <h4>Products details for {{ id }}</h4>
-        <p>{{ product.id }}</p>
-        <p>{{ product.title }}</p>
-        <p>{{ product.price }}</p>
+        <ProductDetails :product="product" />
     </div>
 </template>
 
