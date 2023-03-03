@@ -7,7 +7,7 @@
     </header>
 
     <!-- output page content. Nuxt automatically look out for this component -->  
-    <div>
+    <div  class="container mx-auto p-4">
         <slot/>
     </div>
 
