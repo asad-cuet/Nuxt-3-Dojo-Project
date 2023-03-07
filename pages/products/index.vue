@@ -13,6 +13,10 @@ definePageMeta({
     layout:'products'
 })
 const {data:products}=await useFetch('https://fakestoreapi.com/products')
+
+useHead({
+    title:"Products"
+})
 </script>
 
 <style scoped>

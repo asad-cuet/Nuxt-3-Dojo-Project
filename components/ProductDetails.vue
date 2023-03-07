@@ -1,6 +1,10 @@
 // /products/:id route
 <template>
     <div class="card">
+    <Head>
+        <Title>Nuxt Dojo | {{ product.title }}</Title>
+        <Meta name="description" :content="product.description" />
+    </Head>
     <div class="grid grid-cols-2 gap-10">
         <div class="p-7">
             <img :src="product.image" alt="" class="mx-auto my-7">
@@ -10,6 +14,10 @@
             <p class="text-xl my-7">Price - ${{ product.price }}</p>
             <h3 class="font-bold border-b-2 mb-4 pb-2">Product Description</h3>
             <p class="mb-7">{{ product.description }}</p>
+            <button class="btn flex">
+                <i class="material-icons mr-2">add_shopping_cart</i>
+                <span>Add to Cart</span>
+            </button>
         </div>
     </div>
     </div>

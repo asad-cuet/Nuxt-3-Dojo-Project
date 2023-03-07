@@ -7,4 +7,15 @@ export default defineNuxtConfig({
           autoprefixer: {},
         },
       },
+    app:{
+      head:{
+        title:'Nuxt Dojo',
+        meta:[
+          { name: 'description', content: "Everything abount Nuxt 3" }
+        ],
+        link:[
+          { rel:'stylesheet', href: "https://fonts.googleapis.com/css?family=Tangerine" }
+        ]
+      }
+    }
 })
