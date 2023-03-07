@@ -17,5 +17,8 @@ export default defineNuxtConfig({
           { rel:'stylesheet', href: "https://fonts.googleapis.com/css?family=Tangerine" }
         ]
       }
+    },
+    runtimeConfig:{
+      currencyKey: process.env.CURRENCY_API_KEY
     }
 })
